@@ -55,7 +55,7 @@
             [full-width-start] minmax(0, 1fr)
             [wide-start] minmax(0, 10rem)
             [content-start] min(100% - 2rem, 900px) [content-end]
-            mimax(0, 10rem) [wide-end]
+            minmax(0, 10rem) [wide-end]
             minmax(0, 1fr) [full-width-end];
     }
 
@@ -110,8 +110,9 @@
     }
 
     p,
-    figcaption,
-    li {
+    li,
+    figcaption {
+        max-width: var(--body-max-width);
         text-wrap: pretty;
     }
 
